@@ -6,7 +6,7 @@
 
 Avant de démarrer le projet, il est nécessaire d'installer certaines dépendances sur l'environnement de travail. Pour effectuer ces installations, vous pouvez éxécuter la commande suivante :
 ```bash
-pip install -r ressources/requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Data
