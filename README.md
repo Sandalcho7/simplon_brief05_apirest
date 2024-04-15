@@ -39,4 +39,4 @@ python main.py
 
 ### Doc
 
-Pour un hôte (127.0.0.1) et un port (8000), accédez à http://127.0.0.1:8000/docs sur votre navigateur, une fois le serveur lancé, pour accéder aux fonctionnalités de l'API.
+Pour un hôte (localhost) et un port (8000), accédez à http://localhost:8000/docs sur votre navigateur, une fois le serveur lancé, pour accéder aux fonctionnalités de l'API.
