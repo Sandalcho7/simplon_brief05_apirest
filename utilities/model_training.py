@@ -38,7 +38,6 @@ model_rfr = RandomForestRegressor(max_depth=20, min_samples_leaf=15, n_estimator
 
 
 
-
 if not os.path.exists("../" + MODELS_FOLDER):
     os.makedirs("../" + MODELS_FOLDER)
 

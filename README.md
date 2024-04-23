@@ -13,6 +13,33 @@ pip install -r requirements.txt
 
 [Lien vers les données à utiliser](https://www.kaggle.com/datasets/benoitfavier/immobilier-france/data)
 
+### Structure du projet
+
+```bash
+project/
+│
+├── data/
+│   ├── idf_transactions.csv    # Fichier généré par data_process.py (cible les départements de l'IDF dans ce cas)
+│   ├── transactions.csv    # Fichier généré par npz_to_csv.py
+│   └── transactions.npz    # Fichier compressé à télécharger sur Kaggle
+│
+├── models/    # Modèles générés par model_training.py
+│   ├── model_dtr.pkl    # Scikit-learn DecisionTreeRegressor
+│   └── model_rfr.pkl    # Scikit-learn RandomForestRegressor
+│
+├── utilities/
+│   ├── config.py    # Config des chemins de dossiers, fichiers générés par les scripts
+│   ├── data_process.py    # Nettoyage des données, filtrage pour cibler les départements de l'IDF
+│   ├── model_testing.py    # Utilisation de Grid Search pour tester les performances des différents types de modèles
+│   ├── model_training.py    # Entraînement des modèles avec les paramètres choisis, génération des fichiers .pkl
+│   └── npz_to_csv.py    # Script de décompression d'un fichier .npz en .csv
+│
+├── .gitignore
+├── main.py    # API script
+├── README.md
+└── requirements.txt
+```
+
 ### Procédure
 
 1 / Télécharger le fichier transactions.npz sur kaggle (voir data) et le placer dans un dossier data/<br><br>
